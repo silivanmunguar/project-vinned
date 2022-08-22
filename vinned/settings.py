@@ -12,10 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
-# to extract environment variables
+# Initialise environment variablesto extract environment variables
 import environ
-
-# Initialise environment variables
 env = environ.Env()
 environ.Env.read_env()
 
@@ -44,6 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #-----------------------
+    'vinned_app',
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +58,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'vinned.urls'
+
 
 TEMPLATES = [
     {
