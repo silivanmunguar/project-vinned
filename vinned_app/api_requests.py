@@ -19,17 +19,6 @@ def getVinInfo(vin):
     return (response.json())
 
 
-
-# def get_vin_info(vin):
-#     url = "https://vindecoder.p.rapidapi.com/decode_vin"
-#     querystring = {"vin":vin}
-#     headers = {
-# 	    "X-RapidAPI-Key": "6f059c07camshf4b9eb01d3197c8p124e0cjsn572a1159d1ba",
-# 	    "X-RapidAPI-Host": "vindecoder.p.rapidapi.com"
-#         }
-#     response = requests.request("GET", url, headers=headers, params=querystring)
-#     return (response.text)
-
 # def deciodeVin_flat(vin):
 #     format = "format=json"
 #     url = str("https://vpic.nhtsa.dot.gov/api/vehicles/decodevinextended/" + vin + "?" + format)
