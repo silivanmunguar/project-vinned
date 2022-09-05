@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    :root {
+      --vinned-orange: 231, 111, 81, 1;
+      --color-secondary: 111 114 185;
+      /* ... */
+    }
+  }

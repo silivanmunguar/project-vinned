@@ -1,4 +1,12 @@
 {
-    "files.autoSave": "onFocusChange"
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
+
+// {
+//     ,
+//     "[javascript]": {
+//       "editor.defaultFormatter": "esbenp.prettier-vscode"
+//     }
+//   }
 

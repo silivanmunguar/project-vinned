@@ -1,0 +1,21 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>car results</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% tailwind_preload_css %}
+		{% tailwind_css %}
+	</head>
+	<body class="bg-green-50 font-serif leading-normal tracking-normal">
+        <ul>
+            <li><h3>Model: <span>{{ make.name }} {{ model.name }}</span></h3></li>
+            <li><h3>Transmission: <span>{{ transmission.numberOfSpeeds }} <span> speed</span> {{ transmission.transmissionType }}</span></h3></li>
+            <li><h3>Motor: <span> {{ engine.size }} <span>Litres </span>{{engine.compressorType}} {{ engine.configuration }}{{ engine.cylinder}}</span></h3></li>
+            <li><h3>Horse Power: <span>{{ engine.horsepower}}</span></h3></li>
+        </body>
+    </html>    
+	</body>
+</htm
