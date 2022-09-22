@@ -1,22 +1,29 @@
-<!-- {% load static tailwind_tags %} -->
+{% load static tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
     <title>Vinned</title>
 		<meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../static/custom.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../static/custom.css"> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- {% tailwind_preload_css %}
-		{% tailwind_css %} -->
+        {% tailwind_preload_css %}
+		{% tailwind_css %}
 	</head>
 	<!-- <body class="bg-green-50 font-serif leading-normal tracking-normal"> -->
 	<body>
+        <div class="flex justify-center items-center text-center">
+            <h1>App works but is not pretty. See upcoming changes in <span> <b><a class="underline text-blue-600" href="https://www.figma.com/proto/jjbdIcANTbw7gsnW7h3Lu8/vinned?node-id=0%3A1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A52">Figma</a></b></span></h1>
+        </div>
+        <div class="flex justify-center items-center text-center">
+            <p>Sample VIN: ZPBUA1ZL9KLA00848</p>
+        </div>
         <div class="flex justify-center items-center bg-gray-500 mt-40">
             <form action="results" method="post">
                 {% csrf_token %}
                 <div class="search-box">
                     <input class="w-[500px] h-14 border-4 border--vinned-orange rounded-full color--vinned-orange align-center" type="text" id="vin#" name='vin#' placeholder="ENTER VIHECLE IDENTIFICATION NUMBER">
+                    <input type="submit" value="submit">
                 </div>
                 <div class="flex justify-center items-center p-4 mode-toggle">
                 <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
@@ -31,7 +38,7 @@
                 </label>
 
                 </div>
-                <input type="submit" value="submit">
+                
               </form>
         </div>
         <div>
