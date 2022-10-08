@@ -1,0 +1,6 @@
+#ALIASES
+alias db_start="sudo service postgresql start"
+alias db_stop="sudo service postgresql stop"
+alias db_status="sudo service postgresql status"
+alias django="python manage.py runserver"
+alias tailwind="python manage.py tailwind start"
